@@ -51,15 +51,15 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 2. **Create a new project**:
 ```bash
-mkdir dspy-rag-enhanced
-cd dspy-rag-enhanced
+mkdir dspy-rag-showcase
+cd dspy-rag-showcase
 uv init
 ```
 
 3. **Add dependencies** to your `pyproject.toml`:
 ```toml
 [project]
-name = "dspy-rag-enhanced"
+name = "dspy-rag-showcase"
 version = "0.1.0"
 dependencies = [
     "dspy-ai>=2.0.0",
@@ -85,7 +85,7 @@ ollama serve
 ollama pull llama3.2:3b
 ```
 
-6. **Create the main script** (`main.py`) with the enhanced RAG code
+6. **Run the main script** (`main.py`) with the DSPy RAG code
 
 7. **Run the application**:
 ```bash
@@ -248,7 +248,7 @@ ollama serve
 
 ## Project Structure
 ```
-dspy-rag-enhanced/
+dspy-rag-showcase/
 ├── main.py              # Main application code
 ├── pyproject.toml       # Project dependencies
 ├── chroma_store/        # ChromaDB persistent storage
